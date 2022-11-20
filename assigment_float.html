@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .main-container {
+            height: 100vh;
+            background-color: rgba(215, 240, 240, 0.979);
+        }
+
+        .heading {
+            position: absolute;
+            top: 5%;
+            left: 45%;
+        }
+
+        .cont1 {
+            float: left;
+            height: 550px;
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 13%;
+            top: 15%;
+            border-radius: 10px;
+            padding: 47px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .cont2 {
+            float: right;
+            height: 550px;
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            right: 13%;
+            top: 15%;
+            border-radius: 10px;
+            padding: 47px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .cont1 img {
+            margin-bottom: 35px;
+            border-radius: 10px;
+            width:400px;
+        }
+
+        #btn1 {
+            border: 2px solid black;
+            width: 100px;
+            padding: 10px;
+            margin-top: 50px;
+            border-radius: 100px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .box1 img {
+            float: left;
+            border-radius: 10px;
+            margin-right: 15px;
+            width: 200px;
+        }
+
+        .box2 img {
+            float: left;
+            border-radius: 10px;
+            position: absolute;
+            top: 40%;
+            width: 200px;
+        }
+
+        .box2_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .box3 {
+            margin-top: 25px;
+        }
+
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 5px;
+        }
+
+        .arrow2 {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 5px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        hr.ruler1 {
+            border-top: 1px dotted black;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 50px;
+
+        }
+
+        hr.ruler2 {
+            border-top: 1px dotted black;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 170px;
+
+        }
+
+        #leftBtn {
+            border: 2px solid black;
+            width: 100px;
+            padding: 5px;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            display: inline-block;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+
+        #rightBtn {
+            float: right;
+            border: 2px solid aqua;
+            background-color: aqua;
+            padding: 5px;
+            color: white;
+            border-radius: 30px;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+        <div class="content">
+            <div class="cont1">
+                <img src="images/img-01.png" alt="seagull">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum esse molestias? Lorem
+                    ipsum
+                    dolor
+                    sit amet consectetur adipisicing elit. Facere tempora, </p>
+
+                <button id="btn1">Read More</button>
+            </div>
+
+            <div class="cont2">
+                <div class="box1">
+                    <img src="images/img-01.png" alt="seagull">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <b>Read More</b><i class="arrow right"></i></p>
+                </div>
+                <hr class="ruler1">
+                <div class="box2">
+                    <img src="images/img-01.png" alt="seagull">
+                    <div class="box2_content">
+                        <b>Lorem ipsum dolor sit amet.</b>
+                    </div>
+                </div>
+                <hr class="ruler2">
+                <div class="box3">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <hr style="margin-top: 20px;">
+                <button id="leftBtn">Read More<i class="arrow2 right"></i></button>
+                <button id="rightBtn">Read More<i class="arrow2 right"></i></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

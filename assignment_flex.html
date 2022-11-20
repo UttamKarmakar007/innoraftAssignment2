@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .main-container {
+            height: 100vh;
+            background-color: rgba(215, 240, 240, 0.979);
+
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 10%;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            height: 75%;
+            justify-content: space-evenly;
+        }
+
+        .cont1 {
+            display: flex;
+            width: 40%;
+            height: 95%;
+            flex-direction: column;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+        .cont1 img {
+            height: 58%;
+            width: 90%;
+            border-radius: 20px;
+            position: relative;
+            top: 5%;
+            left: 5%;
+        }
+
+        .cont1_subcontent {
+            position: relative;
+            top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 33px;
+        }
+
+        .cont2 {
+            display: flex;
+            width: 40%;
+            height: 95%;
+            flex-direction: column;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .box1 {
+            display: flex;
+            width: 100%;
+            height: 33%;
+            align-items: center;
+            margin-left: 17px
+        }
+
+        .box1_subcontent{
+            margin-left: 20px;
+        }
+        .box1 img {
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        .box2 {
+            display: flex;
+            width: 100%;
+            height: 33%;
+            align-items: center;
+            margin-left: 17px
+        }
+
+        .box2 img {
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        .box2_content {
+            width: 60%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 5%;
+            margin-top: 12px;
+        }
+
+        #leftBtn {
+            margin-left: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        #rightBtn {
+            margin-right: 25px;
+            background-color: rgb(23, 23, 223);
+            color: white;
+            border: none;
+        }
+
+        button {
+            border: 2px solid black;
+            border-radius: 20px;
+            background: none;
+            color: black;
+            padding: 8px 20px;
+            margin: 8px 0;
+            height: 40px;
+            width: 120px;
+            cursor: pointer;
+        }
+        #btn1{
+            margin-top: 20px;
+        }
+        #rightBtn {
+            float: right;
+
+        }
+
+        hr.ruler {
+            border-top: 1px dashed rgb(0, 0, 0);
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 10px;
+
+        }
+        hr.solid{
+            border-top: 1px solid rgb(0, 0, 0);
+            margin-top: 15px;
+        }
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 5px;
+        }
+        .arrow2 {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 5px;
+        }
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+        <div class="content">
+            <div class="cont1">
+                <img src="images/img-01.png" alt="seagull">
+                <div class="cont1_subcontent">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum esse molestias? Lorem
+                        ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Facere tempora, </p>
+                    <button id="btn1">Read More</button>
+                </div>
+            </div>
+
+            <div class="cont2">
+                <div class="box1">
+                    <img src="images/img-01.png" alt="seagull">
+                    <div class="box1_subcontent">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <b>Read More</b><i class="arrow right"></i></p>
+                    </div>
+
+                </div>
+                <hr class="ruler">
+                <div class="box2">
+                    <img src="images/img-01.png" alt="seagull" width="200px">
+                    <div class="box2_content">
+                        <b>Lorem ipsum dolor sit amet.</b>
+                    </div>
+
+                </div>
+                <hr class="ruler">
+                <div class="box3">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <hr class="solid">
+                <div class="box4">
+                    <button id="leftBtn">Read More<i class="arrow2 right"></i></button>
+                    <button id="rightBtn">Read More<i class="arrow2 right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
